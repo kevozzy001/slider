@@ -1,0 +1,140 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: rgb(50, 50, 70);
+    background-repeat: repeat;
+    background-size: 200px 300px;
+}
+
+ul{
+  list-style: none;  
+}
+
+.container{
+    height: 420px;
+    width: 750px;
+    overflow: hidden;
+    border: 5px solid black;
+    position: relative;
+}
+
+.header{
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.header button{
+    padding: 5px 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    border: none;
+    transition: .1s;
+    border-radius: 10px;
+}
+
+.header button:hover{
+    color:white;
+    background-color: rgb(0, 149, 255);
+}
+
+.header button:active{
+    background-color: rgb(0, 100, 172);
+}
+
+.image-slider{
+    width: 100%;
+    height: 100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.slide-btn{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+
+.checked{
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: .2s;
+}
+
+.checked:hover{
+    background-color: white;
+}
+
+.left{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: 10px;
+    transition: .15s;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.right{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 10px;
+    transition: .15s;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.right:hover,
+.left:hover{
+    color: white;
+    border: 2px solid white;
+}
+
+.description{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.dudu-text{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 32px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    background-color: black;
+    width: fit-content;
+}
